@@ -1,0 +1,11 @@
+	{
+	  "type": "record",
+	  "name": "Person",
+	  "namespace": "org.apdplat.demo.gora.generated",
+	  "fields" : [
+		{"name": "idcard", "type": "string"},
+		{"name": "name", "type": "string"},
+		{"name": "age", "type": "string"}
+	  ]
+	}
+
