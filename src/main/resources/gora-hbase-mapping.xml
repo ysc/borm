@@ -1,12 +1,12 @@
-	<gora-orm>
-	  <table name="Person">
-		<family name="basic"/>
-		<family name="detail"/>
-	  </table>
-	  <class table="Person" name="org.apdplat.demo.gora.generated.Person" keyClass="java.lang.String">
-	   <field name="idcard" family="basic" qualifier="idcard"/>
-	   <field name="name" family="basic" qualifier="name"/>
-	   <field name="age" family="detail" qualifier="age"/>
-	  </class>
-	</gora-orm>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<gora-orm>
+    <table name="Person">
+        <family name="basic"/>
+        <family name="detail"/>
+    </table>
+    <class table="Person" name="org.apdplat.demo.gora.generated.Person" keyClass="java.lang.String">
+        <field name="idcard" family="basic" qualifier="idcard"/>
+        <field name="name" family="basic" qualifier="name"/>
+        <field name="age" family="detail" qualifier="age"/>
+    </class>
+</gora-orm>
