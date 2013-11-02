@@ -1,10 +1,10 @@
 package org.apdplat.demo.gora;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.text.ParseException;
-import java.util.StringTokenizer;
 
 import org.apache.avro.util.Utf8;
 import org.apache.gora.query.Query;
@@ -32,7 +32,7 @@ public class PersonManager {
 	  }
 	  private void parse(String input) throws IOException, ParseException, Exception {
 	    log.info("解析文件:" + input);
-	    BufferedReader reader = new BufferedReader(new FileReader(input));
+	    BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(input),"utf-8"));
 	    long lineCount = 0;
 	    try {
 	      String line = reader.readLine();
