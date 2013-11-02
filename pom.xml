@@ -16,8 +16,12 @@
         <junit.version>3.8.1</junit.version>
         <hadoop-core.version>1.2.1</hadoop-core.version>
         <hbase.version>0.94.12</hbase.version>
-        <gora-core.version>0.3</gora-core.version>
-        <gora-hbase.version>0.3</gora-hbase.version>        
+        <!-- 如使用mysql则gora-core要使用0.2.1版本，而不能是0.3版本 -->
+        <gora-core.version>0.2.1</gora-core.version>
+        <gora-hbase.version>0.3</gora-hbase.version>     
+        <gora-sql.version>0.1.1-incubating</gora-sql.version>   
+        <!-- 数据库驱动 -->
+        <mysql.version>5.1.18</mysql.version>
     </properties>
     
     <dependencies>
@@ -31,6 +35,12 @@
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-core</artifactId>
             <version>${hadoop-core.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>hsqldb</groupId>
+                    <artifactId>hsqldb</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.apache.hbase</groupId>
@@ -66,6 +76,22 @@
                     <artifactId>hadoop-test</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.gora</groupId>
+            <artifactId>gora-sql</artifactId>
+            <version>${gora-sql.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hsqldb</groupId>
+                    <artifactId>hsqldb</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 </project>

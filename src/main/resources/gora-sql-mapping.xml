@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<gora-orm>
+    <class name="org.apdplat.demo.gora.generated.Person" keyClass="java.lang.String" table="Person">
+        <primarykey name="idcard" column="idcard" length="18"/>
+        <field name="idcard" column="idcard" length="18"/>
+        <field name="name" column="name" length="18"/>
+        <field name="age" column="age" length="3"/>
+    </class>
+</gora-orm>
