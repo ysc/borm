@@ -6,7 +6,8 @@ HBase必读：<br/>
 3、<a href="http://yangshangchuan.iteye.com/blog/1953733" target="_blank">项目初始建立步骤</a><br/>
 如何切换底层存储为HBase：<br/>
 1、修改pom.xml，指定gora-core.version的值为0.3<br/>
-2、修改gora.properties，指定gora.datastore.default的值为org.apache.gora.hbase.store.HBaseStore
+2、修改gora.properties，指定gora.datastore.default的值为org.apache.gora.hbase.store.HBaseStore<br/>
+3、修改hbase-site.xml，指定HBase集群依赖的zookeeper的主机及端口
 </p>
 <p>
 MySQL必读：<br/>
