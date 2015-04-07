@@ -1,2 +1,13 @@
+.settings/
+.classpath
+.project
 target/
+logs/
+data/
+.idea/
+superword.iml
+superword.ipr
+superword.iws
+.gradle/
+build/
 person-analytics-output/
