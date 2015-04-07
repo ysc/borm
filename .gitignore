@@ -5,9 +5,9 @@ target/
 logs/
 data/
 .idea/
-superword.iml
-superword.ipr
-superword.iws
+borm.iml
+borm.ipr
+borm.iws
 .gradle/
 build/
-person-analytics-output/
+person-analytics-output/borm
