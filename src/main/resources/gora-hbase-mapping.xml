@@ -4,7 +4,7 @@
         <family name="basic"/>
         <family name="detail"/>
     </table>
-    <class table="Person" name="org.apdplat.demo.gora.generated.Person" keyClass="java.lang.String">
+    <class table="Person" name="org.apdplat.borm.generated.Person" keyClass="java.lang.String">
         <field name="idcard" family="basic" qualifier="idcard"/>
         <field name="name" family="basic" qualifier="name"/>
         <field name="age" family="detail" qualifier="age"/>
