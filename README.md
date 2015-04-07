@@ -11,7 +11,7 @@ HBase必读：<br/>
 </p>
 <p>
 MySQL必读：<br/>
-MySQL只是方便开发阶段的调试工作，生成环境中不宜使用。<br/>
+MySQL只是方便开发阶段的调试工作，生产环境中不宜使用。<br/>
 如何切换底层存储为MySQL：<br/>
 1、修改pom.xml，指定gora-core.version的值为0.2.1<br/>
 2、修改gora.properties，指定gora.datastore.default的值为org.apache.gora.sql.store.SqlStore
