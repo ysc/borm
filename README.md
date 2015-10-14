@@ -1,4 +1,5 @@
 <h1>borm – 大数据的对象持久化</h1>
+[捐赠致谢](https://github.com/ysc/QuestionAnsweringSystem/wiki/donation)
 <p>
 HBase必读：<br/>
 1、<a href="http://yangshangchuan.iteye.com/blog/1953929" target="_blank">建立Hadoop环境</a><br/>
